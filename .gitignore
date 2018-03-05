@@ -14,8 +14,8 @@ develop-eggs/
 dist/
 downloads/
 eggs/
+.idea/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
