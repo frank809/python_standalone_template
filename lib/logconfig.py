@@ -1,16 +1,15 @@
 import logging
 import logging.handlers
-import sys
 
 
-# create logger with
-logger = logging.getLogger()
+# create logger
+logger = logging.getLogger('applog')
 logger.setLevel(logging.NOTSET)
 
 
 def initlog(logname,level=logging.INFO):
     # create file handler which logs even debug messages
-    filehandler = logging.handlers.RotatingFileHandler(logname, maxBytes=1024 * 1024, backupCount=5)
+    filehandler = logging.handlers.RotatingFileHandler(logname, maxBytes=1024 * 1024 * 1024, backupCount=5)
     filehandler.setLevel(level)
     # create console handler with a higher log level
     ch = logging.StreamHandler()
@@ -23,4 +22,4 @@ def initlog(logname,level=logging.INFO):
     logger.addHandler(ch)
     logger.addHandler(filehandler)
 
-initlog(logname="Appname")
+initlog(logname="haha.log")

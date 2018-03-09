@@ -1,8 +1,9 @@
 from lib import logger
+import lib
 import sys
 
 
-logger.error('param:%s',sys.argv[0])
+logger.error('param:%s', sys.argv[0])
 
 
 logger.error('Hello')
@@ -23,7 +24,6 @@ def test():
 def hi():
     test()
     return
-#test()
-#hi()
+
 print "1"
 
